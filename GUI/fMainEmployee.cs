@@ -86,6 +86,8 @@ namespace ManageCafe.GUI
             {
                 fAd fr = new fAd();
                 fr.MdiParent = this;
+               
+
                 fr.Show();
                 
             }
@@ -121,7 +123,9 @@ namespace ManageCafe.GUI
                 fAd fr = new fAd();
                 fr.MdiParent = this;
                 fr.Show();
-                fr.BringToFront();
+               
+
+
             }
         }
     }
