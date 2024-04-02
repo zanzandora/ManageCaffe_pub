@@ -88,11 +88,11 @@
     <Compile Include="GUI\fMainEmployee.Designer.cs">
       <DependentUpon>fMainEmployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Form1.cs">
+    <Compile Include="GUI\fMaterialsReport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="GUI\fMaterialsReport.Designer.cs">
+      <DependentUpon>fMaterialsReport.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\fAd.cs">
       <SubType>Form</SubType>
@@ -110,9 +110,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\fMainEmployee.resx">
       <DependentUpon>fMainEmployee.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\fMaterialsReport.resx">
+      <DependentUpon>fMaterialsReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\fAd.resx">
       <DependentUpon>fAd.cs</DependentUpon>

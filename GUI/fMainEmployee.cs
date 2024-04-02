@@ -13,14 +13,25 @@ namespace ManageCafe.GUI
     public partial class fMainEmployee : Form
     {
         bool isItemSelected = false;
-
+        
         public fMainEmployee()
         {
             InitializeComponent();
-            
-
         }
-
+        private Form currentFormChild;
+        private void OpenChildForm(Form childForm)
+        {
+            if(currentFormChild != null)
+            {
+                currentFormChild.Close();
+            }
+            currentFormChild = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            childForm.BringToFront();
+            childForm.Show();
+        }
         private Form kiemtratontai(Type formtype)
         {
             foreach (Form f in this.MdiChildren)
@@ -34,23 +45,7 @@ namespace ManageCafe.GUI
 
         private void statisticalReportToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // Tô đậm item khi click chuột vào
-            ((ToolStripMenuItem)sender).BackColor = Color.Linen;
-
-            // Set flag
-            isItemSelected = true;
             
-            Form frm = kiemtratontai(typeof(Form1));
-            if (frm != null)
-                frm.Activate();
-            else
-            {
-                Form1 fr = new Form1();
-                fr.MdiParent = this;
-                
-                fr.Show();
-                fr.BringToFront();
-            }
             
         }
 
@@ -115,6 +110,7 @@ namespace ManageCafe.GUI
 
         private void fMainEmployee_Load(object sender, EventArgs e)
         {
+            
             Form frm = kiemtratontai(typeof(fAd));
             if (frm != null)
                 frm.Activate();
@@ -123,10 +119,19 @@ namespace ManageCafe.GUI
                 fAd fr = new fAd();
                 fr.MdiParent = this;
                 fr.Show();
-               
-
-
             }
+        }
+        private void materialsReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            // Tô đậm item khi click chuột vào
+            ((ToolStripMenuItem)sender).BackColor = Color.Linen;
+
+            // Set flag
+            isItemSelected = true;
+
+            OpenChildForm(new fMaterialsReport());
+
         }
     }
 }

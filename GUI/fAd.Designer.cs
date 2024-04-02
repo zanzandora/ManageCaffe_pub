@@ -102,9 +102,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(334, 25);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(479, 46);
+            this.label4.Size = new System.Drawing.Size(483, 46);
             this.label4.TabIndex = 7;
-            this.label4.Text = "CATNAP HOUSE CAFFE";
+            this.label4.Text = "CATNAP HOUSE COFFE";
             // 
             // label3
             // 
@@ -213,7 +213,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(1150, 750);
             this.Controls.Add(this.label7);
@@ -230,6 +230,7 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fAd";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.fAd_Load);

@@ -10,14 +10,28 @@ using System.Windows.Forms;
 
 namespace ManageCafe.GUI
 {
-    public partial class Form1 : Form
+    public partial class fMaterialsReport : Form
     {
-        public Form1()
+        public fMaterialsReport()
         {
             InitializeComponent();
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.ControlBox = false;
+
+        }
+
+        private void fMaterialsReport_Load(object sender, EventArgs e)
+        {
+
+
+
+
+        }
+
+        private void fMaterialsReport_Shown(object sender, EventArgs e)
+        {
+
         }
     }
 }
