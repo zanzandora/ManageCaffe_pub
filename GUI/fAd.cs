@@ -24,11 +24,6 @@ namespace ManageCafe.GUI
             
         }
 
-        private void fAd_Load(object sender, EventArgs e)
-        {
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            
-            this.Dock = DockStyle.Fill;
 
         }
     }

@@ -21,17 +21,6 @@ namespace ManageCafe.GUI
 
         }
 
-        private void fMaterialsReport_Load(object sender, EventArgs e)
-        {
 
-
-
-
-        }
-
-        private void fMaterialsReport_Shown(object sender, EventArgs e)
-        {
-
-        }
     }
 }
